@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,6 +17,7 @@ import javax.persistence.Table;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.soccer.address.entity.Address;
 import com.soccer.common.entity.BaseEntity;
 import com.soccer.order.entity.Order;
 import com.soccer.userAuthority.entity.UserAuthority;
@@ -48,11 +50,8 @@ public class User extends BaseEntity implements UserDetails {
 	
 	private String email;
 	
-	private String zipcode;
-	
-	private String city;
-	
-	private String street;
+	@Embedded
+	private Address address;
 	
 	@OneToMany(mappedBy = "user")
 	private List<Order> order = new ArrayList<Order>();
