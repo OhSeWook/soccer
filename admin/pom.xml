@@ -12,7 +12,7 @@
 	<artifactId>admin</artifactId>
 	<version>0.0.1.admin-SNAPSHOT</version>
 	<name>admin</name>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>group.osw</groupId>
@@ -20,5 +20,14 @@
 			<version>0.0.1.core-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-	
+
+
+<!-- 	<build> -->
+<!-- 		<plugins> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.springframework.boot</groupId> -->
+<!-- 				<artifactId>spring-boot-maven-plugin</artifactId> -->
+<!-- 			</plugin> -->
+<!-- 		</plugins> -->
+<!-- 	</build> -->
 </project>
