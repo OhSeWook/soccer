@@ -5,10 +5,10 @@
     <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
 
     <!-- 로그 파일이 저장될 경로 -->
-    <property name="LOG_PATH" value="/usr/sampleApp/logs"/>
+    <property name="LOG_PATH" value="/usr/osw/soccer/admin/logs"/>
     
     <!-- 로그 파일 이름 -->
-    <property name="LOG_FILE_NAME" value="sampleLog"/>
+    <property name="LOG_FILE_NAME" value="soccerAdminLog"/>
     
     <!-- 로그 출력 패턴 -->
     <property name="LOG_PATTERN" value="%-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n"/>
