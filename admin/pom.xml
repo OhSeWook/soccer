@@ -31,7 +31,17 @@
 					<mainClass>com.soccer.SoccerApplication</mainClass>
 				</configuration>
 			</plugin>
-	        
+			
+			<plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-resources-plugin</artifactId>
+	            <configuration>
+	                <delimiters>
+	                    <delimiter>${*}</delimiter>
+	                </delimiters>
+	                <useDefaultDelimiters>false</useDefaultDelimiters>
+	            </configuration>
+	        </plugin>
 		</plugins>
 	</build>
 	

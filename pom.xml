@@ -10,7 +10,7 @@
 	<artifactId>soccer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
@@ -20,7 +20,7 @@
 	<modules>
 		<module>core</module>
 		<module>admin</module>
-    <module>api</module>
-  </modules>
+		<module>api</module>
+	</modules>
 	
 </project>
